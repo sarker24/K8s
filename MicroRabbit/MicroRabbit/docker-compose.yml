@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microrabbit.catering.api:
+    image: ${DOCKER_REGISTRY-}microrabbitcateringapi
+    build:
+      context: .
+      dockerfile: MicroRabbit.Catering.Api/Dockerfile
